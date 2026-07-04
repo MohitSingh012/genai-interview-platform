@@ -66,7 +66,7 @@ async function registerUserController(req, res) {
  * @description login a user, expects email and password in the request body
  * @access Public
  */
-/*
+
 async function loginUserController(req, res) {
   const { email, password } = req.body;
 
@@ -114,54 +114,7 @@ async function loginUserController(req, res) {
     }
   })
 }
-*/
-async function loginUserController(req, res) {
-  const { email, password } = req.body;
 
-  console.log("Email received:", email);
-
-  const user = await userModel.findOne({ email });
-
-  console.log("User found:", user);
-
-  if (!user) {
-    return res.status(400).json({
-      message: "Invalid email or password",
-    });
-  }
-
-  console.log("Stored password:", user.password);
-
-  const isPasswordValid = await bcrypt.compare(password, user.password);
-
-  console.log("Password valid:", isPasswordValid);
-
-  if (!isPasswordValid) {
-    return res.status(400).json({
-      message: "Invalid email or password",
-    });
-  }
-
-  const token = jwt.sign(
-    {
-      id: user._id,
-      username: user.username,
-    },
-    process.env.JWT_SECRET,
-    { expiresIn: "1d" }
-  );
-
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none",
-    maxAge: 24 * 60 * 60 * 1000,
-  });
-
-  return res.status(200).json({
-    message: "User logged in successfully",
-  });
-}
 
 /**
  * @name logoutUserController
