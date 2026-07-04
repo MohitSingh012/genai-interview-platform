@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     origin:["http://localhost:5173",
-        "https://genai-backend-s7cu.onrender.com"
-    ],
+        "https://genai-frontend-82n7.onrender.com"
+        ],
     credentials:true 
 }));
 // require all the routes here
