@@ -42,3 +42,40 @@ Express API Server
 MongoDB Atlas (via Mongoose)
 ```
 
+## ⚙️ Installation
+
+### Clone the repository
+```bash
+git clone https://github.com/yourusername/genai-interview-platform.git
+```
+
+### Backend Setup
+```bash
+cd Backend
+npm install
+npm run dev
+```
+
+### Frontend Setup
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env)
+```env
+PORT=
+MONGO_URI=
+JWT_SECRET=
+GEMINI_API_KEY=
+```
+
+### Frontend (.env)
+```env
+VITE_API_URL=
+```
