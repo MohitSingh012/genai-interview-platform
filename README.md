@@ -22,3 +22,19 @@ An AI-powered interview preparation platform that generates personalized practic
 - **Database:** MongoDB Atlas, Mongoose
 - **AI:** Google Gemini AI, pdf-parse
 - **Deployment:** Render
+
+## 🏗️ Architecture
+
+```
+Client (React + Vite)
+        │
+        ▼
+Express API Server
+   ├── JWT Auth Middleware
+   ├── Multer (Resume Upload)
+   ├── pdf-parse (Resume Parsing)
+   └── Google Gemini AI (Question Gen, Analysis)
+        │
+        ▼
+MongoDB Atlas (via Mongoose)
+```
