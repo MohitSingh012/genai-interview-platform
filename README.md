@@ -79,3 +79,14 @@ GEMINI_API_KEY=
 ```env
 VITE_API_URL=
 ```
+
+## 🔮 Future Improvements
+
+- Voice-based mock interview mode
+- Company-specific question banks
+- Analytics dashboard for performance trends over time
+- Dark/light theme toggle
+
+## 📄 License
+
+This project is licensed under the MIT License.
