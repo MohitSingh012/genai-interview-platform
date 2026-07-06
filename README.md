@@ -2,6 +2,9 @@
 
 An AI-powered interview preparation platform that generates personalized practice questions, evaluates answers, and helps candidates track their progress.
 
+🔗 **Live Demo:** [genai-frontend-82n7.onrender.com](https://genai-frontend-82n7.onrender.com)
+📂 **Repo:** [github.com/MohitSingh012/genai-interview-platform](https://github.com/MohitSingh012/genai-interview-platform)
+
 ## ✨ Features
 
 * 🔐 JWT Authentication & Authorization
@@ -38,3 +41,4 @@ Express API Server
         ▼
 MongoDB Atlas (via Mongoose)
 ```
+
