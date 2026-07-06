@@ -16,8 +16,9 @@ An AI-powered interview preparation platform that generates personalized practic
 * ⚡ Google Gemini AI Integration
 
 ## 🛠️ Tech Stack
-**Frontend:** React, Vite, React Router, Axios, SCSS
-**Backend:** Node.js, Express.js, JWT, bcrypt.js, Multer
-**Database:** MongoDB Atlas, Mongoose
-**AI:** Google Gemini AI, pdf-parse
-**Deployment:** Render
+
+- **Frontend:** React, Vite, React Router, Axios, SCSS
+- **Backend:** Node.js, Express.js, JWT, bcrypt.js, Multer
+- **Database:** MongoDB Atlas, Mongoose
+- **AI:** Google Gemini AI, pdf-parse
+- **Deployment:** Render
