@@ -51,9 +51,9 @@ async function registerUserController(req, res) {
     maxAge: 24 * 60 * 60 * 1000,
 });
 
-  res.status(200).json({
+  res.status(201).json({
     message: "User registered successfully",
-      token, // add this line
+      token,
 
     user: {
       id: user._id,
@@ -108,7 +108,7 @@ async function loginUserController(req, res) {
 
   res.status(200).json({
     message:"User logged in successfully",
-      token, // add this line
+      token, 
 
     user:{
         id:user._id,
